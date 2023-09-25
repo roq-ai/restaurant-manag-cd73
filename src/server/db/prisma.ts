@@ -7,7 +7,7 @@ const extendedPrismaClient = () => {
   const prisma = new PrismaClient({
     log: ['query'],
   });
-
+  return prisma;
   const extendedPrisma = prisma.$extends({
     model: {
       $allModels: {
