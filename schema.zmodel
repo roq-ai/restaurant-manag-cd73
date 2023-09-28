@@ -109,3 +109,8 @@ plugin openapi {
     provider = '@zenstackhq/openapi'
     output = './openapi.yaml'
 }
+
+plugin hooks {
+  provider = '@zenstackhq/swr'
+  output = "./src/lib/hooks"
+}
